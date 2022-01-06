@@ -4,10 +4,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caudex&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Świder</title>
+    <script>
+    /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
+
+    function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+    document.images.style.backgroundColoc= "rgba(0,0,0,0.4)";
+    }
+
+    /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+
+    function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
+    document.body.style.backgroundColor = "white";
+    }
+    </script>
 </head>
 <body>
-    
+
+    <header>
+        <a href="index.html"> <img alt="swider_logo" class="logo" src="https://github.com/xBlater/stolarnia/blob/main/logo.png?raw=true"></a>
+        <p>Sliding text ten z logo</p>
+    </header>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Strona Główna</a>
+        <a href="#">Zaufali Nam</a>
+        <a href="#">Galeria</a>
+        <a href="#">Kontakt</a>
+      </div>
+      
+      <!-- Use any element to open the sidenav -->
+      <span id="menu" onclick="openNav()">Menu</span>
+      
+      <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+      <div id="main">
+
+            <div id="glowna">
+                <img alt="Andrzej&Jakub" class="logo2" src="https://github.com/xBlater/stolarnia/blob/main/logo2.png?raw=true">
+                <h2>O firmie</h2>
+                <p>Nasza firma powstała w 1997 r. i nieprzerwanie oferuje Państwu szeroką paletę rozwiązań i produktów najwyższej jakości. Dla nas nie ma drogi na skróty – każdy projekt realizowany jest z najwyższą starannością i dbałością o najmniejszy szczegół. Dlatego stawiamy na najlepsze materiały, nowoczesny park maszynowy i stały rozwój naszych pracowników – wszystko po to, aby nasze produkty cieszyły Państwa swoją niezawodnością i estetyką przez długie lata.</p>
+                <p>Zawsze dbamy o komfort klienta. Dlatego też, ażeby móc cieszyć się Państwa pełnym zadowoleniem oferujemy obsługę kompletną: począwszy od pomiaru, przygotowania projektu i wyceny, poprzez produkcję, do dowozu i montażu, zarówno na terenie Polski, jak i Niemiec, czy Belgii.</p>
+                <p>Zapraszamy do zapoznania się z naszą ofertą.</p>
+                <p>Andrzej i Jakub Świderscy</p>
+            </div>  
+            
+            <div id="glowna2">
+
+                <p><img alt="Andrzej" class="andrzej" src="https://github.com/xBlater/stolarnia/blob/main/Andrzej.png?raw=true">
+                Andrzej Świderski – właściciel, ponad 40 letnie doświadczenie w branży drzewnej (m. in. przez 20 lat kierował produkcją surowca w tartaku w Dębnie) , 30 lat w zawodzie stolarza.</p>
+
+                <p><img class="jakub" alt="Jakub" src="https://github.com/xBlater/stolarnia/blob/main/Jakub.png?raw=true">
+                Jakub Świderski – współwłaściciel, absolwent Wydziału Technologii Drewna Uniwersytetu Przyrodniczego w Poznaniu, Członek Zarządu <a href="http://std.org.pl/">Stowarzyszenia Technologów Drewna</a></p>
+
+            </div>
+
+      </div>
 </body>
 </html>
