@@ -2,6 +2,41 @@ body {
     font-family: 'Caudex', serif;
 }
 
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vh;
+    height: 10vh;
+}
+
+#menu {
+    margin-left: 100px;
+    color: #1c50a2;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+
+#glowna {
+    width: 100vh;
+    height: 70vh;
+    margin-top: 5%;
+    place-content: center;
+}
+
+.logo2 {
+    width: 30%;
+
+}
+
 /* The side navigation menu */
 .sidenav {
     height: 100%;
@@ -30,14 +65,14 @@ body {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    color: rgb(83, 83, 83);
     display: block;
     transition: 0.3s;
 }
 
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
-    color: #111;
+    color: #1c50a2;
 }
 
 /* Position and style the close button (top right corner) */
@@ -49,11 +84,7 @@ body {
     margin-left: 50px;
 }
 
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-#main {
-    transition: margin-left .5s;
-    padding: 20px;
-}
+
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
@@ -63,5 +94,66 @@ body {
 
     .sidenav a {
         font-size: 18px;
+    }
+}
+
+/* Slider z tekstem */
+.slider {
+    width: 50%;
+    height: 50px;
+    padding-left: 15px;
+    overflow: hidden;
+}
+
+.slider div {
+    color: #1c50a2;
+    font-weight: bold;
+    height: 50px;
+    margin: 50px;
+    padding: 2px 2px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.slider-text1 {
+    background: #fff;
+    animation: slide 5s linear infinite;
+}
+
+.slider-text2 {
+    background: #fff;
+}
+
+.slider-text3 {
+    background: #fff;
+}
+
+@keyframes slide {
+    0% {
+        margin-top: -300px;
+    }
+
+    5% {
+        margin-top: -200px;
+    }
+
+    33% {
+        margin-top: -200px;
+    }
+
+    38% {
+        margin-top: -100px;
+    }
+
+    66% {
+        margin-top: -100px;
+    }
+
+    71% {
+        margin-top: 0px;
+    }
+
+    100% {
+        margin-top: 0px;
     }
 }
