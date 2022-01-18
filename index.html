@@ -27,14 +27,16 @@
 <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
 <div id="main">
     <header>
-        <a href="index.html"> <img alt="swider_logo" class="logo" src="https://github.com/xBlater/stolarnia/blob/main/logo.png?raw=true"></a>
+        <!-- Use any element to open the sidenav -->
+        <span id="menu" onclick="openNav()">Menu</span>
+        
         <div class="slider">
             <div class="slider-text1">100% drewna w drewnie</div>
             <div class="slider-text2">Realizujemy indwydiualne projekty</div>
-            <div class="slider-text3">doświadczenie we współpracy z konserwatorami zabytków</div>
+            <div class="slider-text3">Doświadczenie we współpracy z konserwatorami zabytków</div>
         </div>
-        <!-- Use any element to open the sidenav -->
-        <span id="menu" onclick="openNav()">Menu</span>
+        
+        <a href="index.html"> <img alt="swider_logo" class="logo" src="https://github.com/xBlater/stolarnia/blob/main/logo.png?raw=true"></a>
     </header>
 
     <div id="mySidenav" class="sidenav">
@@ -52,21 +54,33 @@
             <p>Nasza firma powstała w 1997 r. i nieprzerwanie oferuje Państwu szeroką paletę rozwiązań i produktów najwyższej jakości. Dla nas nie ma drogi na skróty – każdy projekt realizowany jest z najwyższą starannością i dbałością o najmniejszy szczegół. Dlatego stawiamy na najlepsze materiały, nowoczesny park maszynowy i stały rozwój naszych pracowników – wszystko po to, aby nasze produkty cieszyły Państwa swoją niezawodnością i estetyką przez długie lata.</p>
             <p>Zawsze dbamy o komfort klienta. Dlatego też, ażeby móc cieszyć się Państwa pełnym zadowoleniem oferujemy obsługę kompletną: począwszy od pomiaru, przygotowania projektu i wyceny, poprzez produkcję, do dowozu i montażu, zarówno na terenie Polski, jak i Niemiec, czy Belgii.</p>
             <p>Zapraszamy do zapoznania się z naszą ofertą.</p>
-            <p>Andrzej i Jakub Świderscy</p>
+            <p class="last">Andrzej i Jakub Świderscy</p>
             </article>
     </div>  
             
-    <div id="glowna2">
+    <div id="andrzej">
+            <img alt="Andrzej" class="andrzej" src="https://github.com/xBlater/stolarnia/blob/main/Andrzej.png?raw=true">
+            <span id="andrzej-info">
+            <p class="last">Andrzej Świderski</p>
+             – właściciel, ponad 40 letnie doświadczenie w branży drzewnej (m. in. przez 20 lat kierował produkcją surowca w tartaku w Dębnie) , 30 lat w zawodzie stolarza.</span>
+    </div>
 
-            <p><img alt="Andrzej" class="andrzej" src="https://github.com/xBlater/stolarnia/blob/main/Andrzej.png?raw=true">
-            Andrzej Świderski – właściciel, ponad 40 letnie doświadczenie w branży drzewnej (m. in. przez 20 lat kierował produkcją surowca w tartaku w Dębnie) , 30 lat w zawodzie stolarza.</p>
-
-            <p><img class="jakub" alt="Jakub" src="https://github.com/xBlater/stolarnia/blob/main/Jakub.png?raw=true">
-            Jakub Świderski – współwłaściciel, absolwent Wydziału Technologii Drewna Uniwersytetu Przyrodniczego w Poznaniu, Członek Zarządu <a href="http://std.org.pl/">Stowarzyszenia Technologów Drewna</a></p>
+    <div id="jakub">
+            <img class="jakub" alt="Jakub" src="https://github.com/xBlater/stolarnia/blob/main/Jakub.png?raw=true">
+            <span id="jakub-info">
+            <p class="last">Jakub Świderski</p> 
+            – współwłaściciel, absolwent Wydziału Technologii Drewna Uniwersytetu Przyrodniczego w Poznaniu, Członek Zarządu <a href="http://std.org.pl/">Stowarzyszenia Technologów Drewna</a></span>
 
     </div>
     <footer>
-        
+        <span class="contact">
+            <p>Świderski Centrum Stolarstwa</p>
+            <p>Adres: 74-400 Dębno ul. Chrobrego 2 b</p>
+            <p>tel/fax: (+48) 95 760 46 31</p>
+            <p>tel kom: (+48) 607 343 857</p>
+            <p id="mail">Mail: <a href="mailto: info@swider.pl">info@swider.pl</a> </p>
+        </span>
+        <p id="copyright">Copyright 2022 Bartosz Kondeja</p>
     </footer>
 </div>
 </body>
